@@ -2,7 +2,6 @@ package com.swaglabs.drivers;
 import com.swaglabs.Utils.LogsUtil;
 import io.qameta.allure.Step;
 import org.openqa.selenium.WebDriver;
-import static org.testng.AssertJUnit.fail;
 public class DriverManagerUtils {
 
     // ely h3mel intialize ll drive fl class da bdal ma ykon mawgod fl before method
@@ -35,7 +34,7 @@ public class DriverManagerUtils {
     public static WebDriver getDriver(){
         if (driverThreadLocal.get() == null){
             //LogsUtil.error("driver is null");
-            fail("driver is null");
+            throw new RuntimeException("Driver is null");
         }
         return driverThreadLocal.get();
     }

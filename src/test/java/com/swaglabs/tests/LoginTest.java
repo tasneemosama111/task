@@ -1,9 +1,10 @@
-package test.java.com.swaglabs.tests;
-import main.java.com.swaglabs.pages.*;
-import main.java.com.swaglabs.drivers.*;
-import main.java.com.swaglabs.Utils.*;
+package com.swaglabs.tests;
+import com.swaglabs.pages.*;
+import com.swaglabs.drivers.*;
+import com.swaglabs.Utils.*;
 import com.swaglabs.Utils.BrowserActions;
 import com.swaglabs.Utils.FilesUtils;
+import com.swaglabs.Utils.Validations;
 import org.testng.annotations.*;
 
 import java.io.File;
@@ -22,8 +23,8 @@ public class LoginTest {
 
         new LoginPage(DriverManagerUtils.getDriver()).enterUserName("standard_user")
                 .enterPassword("secret_sauce")
-                .click()
-                .assertSuccessfulLogin();
+                .click();
+        Validations.assertPageUrl(DriverManagerUtils.getDriver(), "https://www.saucedemo.com/inventory.html");
 
     }
 
