@@ -1,7 +1,7 @@
-package test.java.com.swaglabs.tests;
-import main.java.com.swaglabs.pages.*;
-import main.java.com.swaglabs.drivers.*;
-import main.java.com.swaglabs.Utils.*;
+package com.swaglabs.tests;
+import com.swaglabs.pages.*;
+import com.swaglabs.drivers.*;
+import com.swaglabs.Utils.*;
 import com.swaglabs.Utils.BrowserActions;
 import com.swaglabs.Utils.FilesUtils;
 import org.testng.annotations.*;
