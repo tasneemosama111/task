@@ -15,7 +15,7 @@ public class AllureUtils {
 
         super();
     }
-    public static void attachLogzToAllureReport(){
+    public static void attachLogsToAllureReport(){
         // bnddah 3al latest file function ely mawgoda fl fileUtils
 
         try {

@@ -56,7 +56,7 @@ public class LoginTest {
 
     @AfterClass
     public void afterClass(){
-        AllureUtils.attachLogzToAllureReport();
+        AllureUtils.attachLogsToAllureReport();
     }
 }
 
